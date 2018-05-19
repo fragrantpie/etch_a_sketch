@@ -1,10 +1,15 @@
 console.log("Welcome to ETCH-a-Sketch!")
 
-// var container = document.getElementById("container");
-// 
-// // Create the squares.
-// let square = document.createElement("DIV");
-// square.setAttribute("style", "background-color: pink; height: 60px; width: 60px;");
-// 
-// container.appendChild(square);
+function createGrid(size) {
+    let grid_container = document.getElementsByClassName("grid-container")[0];
+    grid_container.style.gridTemplateColumns = `repeat(${size}, auto)`;
+    
+    for (var i = size*size; i > 0; i--) {
+        let cell = document.createElement("div");
+        cell.className = "grid-item";
+        
+        grid_container.appendChild(cell);
+    }
+}
 
+createGrid(16);

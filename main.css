@@ -7,7 +7,7 @@ html, body {
     display: grid;
     width: 90%;
     height: 90%;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+    /* grid-template-columns: repeat(16, auto); */
     border: 10px solid #ACD8F9;
     margin-right: auto;
     margin-left: auto;
